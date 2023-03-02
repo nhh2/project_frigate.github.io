@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>About</title>
-    <%= csrf_meta_tags %>
-
-    <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
-    <meta charset="utf-8">
-
-    <!-- Make it responsive to small screens -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Follow the Frigate</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
   </head>
 
   <body>
 
-    <p>Hi, I’m Richard. I’m a writer and an amateur badminton player.</p>
-    <p>These days, I’m building Quill, content as a service. We write blogs, ebooks, and social posts that you’re proud to share with customers, and even your parents.</p>
-    <p>Previously, I was a part of the YC W22 batch and founded/sold a publishing company.</p>
-    <p>I have a standing open invitation for conversation (please come talk to me about anything!).<p>
-    <p>Personal: richardkong9 -at- gmail.com</p>
-    <p>Work: richard -at- hirequill.com</p>
+  <div class="container">
+    <div class="row">
+      <div class ="col-2">
+        <nav class="nav flex-column nav-pills">
+          <a class="nav-link" aria-current="page" href="/writing">Writing</a>
+          <a class="nav-link active" href="/about">About</a>
+          <a class="nav-link" href="/books">Books</a>
+          <a class="nav-link" href="/now">Now</a>  
+        </nav>
+      </div>
+
+      <div class ="col-10">
+        <p>Hi, I’m Richard. I’m a writer and an amateur badminton player.</p>
+        <p>These days, I’m building Quill, content as a service. We write blogs, ebooks, and social posts that you’re proud to share with customers, and even your parents.</p>
+        <p>Previously, I was a part of the YC W22 batch and founded/sold a publishing company.</p>
+        <p>I have a standing open invitation for conversation (please come talk to me about anything!).<p>
+        <p>Personal: richardkong9 -at- gmail.com</p>
+        <p>Work: richard -at- hirequill.com</p>
+      </div>
+    </div>
+  </div>
 
   </body>
 </html>

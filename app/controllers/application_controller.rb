@@ -1,9 +1,5 @@
 class ApplicationController < ActionController::Base
 
-  def index
-    render ({ :template => "home_template/main_page.html.erb"})
-  end
-
   def writing_index
     render ({ :template => "writing_template/index.html.erb"})
   end
