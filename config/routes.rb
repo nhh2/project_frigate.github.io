@@ -5,6 +5,9 @@ Rails.application.routes.draw do
 
   # Writing
     get("/writing",{ :controller => "application", :action => "writing_index" })
+  
+  # Writing_Show
+    get("/writing/:path_id",{ :controller => "application", :action => "writing_show" })
 
   # About
     get("/about",{ :controller => "application", :action => "about_index" })

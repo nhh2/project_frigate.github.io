@@ -7,6 +7,13 @@ class ApplicationController < ActionController::Base
     render ({ :template => "writing_template/index.html.erb"})
   end
 
+  def writing_show
+    @the_title = params.fetch("path_id")
+    @the_post = Post.where({ :title => @the_title }).at(0)
+
+    render ({ :template => "writing_template/show.html.erb"})
+  end
+
   def about_index
     render ({ :template => "about_template/index.html.erb"})
   end
