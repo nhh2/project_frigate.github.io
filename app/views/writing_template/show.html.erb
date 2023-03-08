@@ -18,8 +18,8 @@
 
       <div class ="col-10">
         <h3> <%= @the_post.title %> </h3>
-        <p> <%= @the_post.content %> </p>
-        <p> Written on <%= @the_post.created_at.strftime("%B %e, %Y") %> </p>
+        <p> <%= simple_format @the_post.content %> </p>
+        <p> Written on <%= @the_post.updated_at.strftime("%B %e, %Y") %> </p>
       </div>
     </div>
   </div>
