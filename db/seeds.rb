@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+  Post.destroy_all
+
+  Post.create!([
+    {title: "Test1"},
+    {title: "Test2"},
+    {title: "Test3"},
+    {title: "Test4"}
+      ])
+
+  p "Created #{Post.count} posts"
